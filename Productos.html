@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - TechStore</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-laptop-code"></i> TechStore</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html" class="active">Productos</a></li>
+                    <li><a href="descuentos.html">Descuentos</a></li>
+                    <li><a href="sucursales.html">Sucursales</a></li>
+                    <li><a href="compras.html">Compras</a></li>
+                    <li><a href="proposito.html">Propósito</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <a href="#" class="btn-login"><i class="fas fa-user"></i> Iniciar Sesión</a>
+                <a href="#" class="btn-cart"><i class="fas fa-shopping-cart"></i> Carrito</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Nuestros Productos</h1>
+            <p>Descubre nuestra amplia gama de productos tecnológicos</p>
+        </div>
+    </section>
+
+    <section class="products-section">
+        <div class="container">
+            <div class="filters">
+                <h3>Filtrar por categoría:</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="smartphones">Smartphones</button>
+                    <button class="filter-btn" data-filter="laptops">Laptops</button>
+                    <button class="filter-btn" data-filter="tablets">Tablets</button>
+                    <button class="filter-btn" data-filter="audio">Audio</button>
+                    <button class="filter-btn" data-filter="accesorios">Accesorios</button>
+                </div>
+            </div>
+
+            <div class="products-grid">
+                <!-- Producto 1 -->
+                <div class="product-card" data-category="smartphones">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Smartphone Pro X">
+                        <span class="product-badge nuevo">Nuevo</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Smartphone Pro X</h3>
+                        <p class="product-description">Pantalla 6.7", 256GB, Cámara Triple 108MP</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(128)</span>
+                        </div>
+                        <p class="price">$899.99</p>
+                        <a href="compras.html" class="btn-buy">Comprar Ahora</a>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="product-card" data-category="laptops">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Laptop Ultra Slim">
+                        <span class="product-badge oferta">Oferta</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Laptop Ultra Slim</h3>
+                        <p class="product-description">Intel i7, 16GB RAM, 512GB SSD, 14"</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(95)</span>
+                        </div>
+                        <p class="price">$1,299.99 <span class="old-price">$1,499.99</span></p>
+                        <a href="compras.html" class="btn-buy">Comprar Ahora</a>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-card" data-category="audio">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Auriculares Premium">
+                    </div>
+                    <div class="product-info">
+                        <h3>Auriculares Premium</h3>
+                        <p class="product-description">Cancelación de ruido, 30h batería</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(67)</span>
+                        </div>
+                        <p class="price">$199.99</p>
+                        <a href="compras.html" class="btn-buy">Comprar Ahora</a>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="product-card" data-category="tablets">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Tablet Pro">
+                    </div>
+                    <div class="product-info">
+                        <h3>Tablet Pro</h3>
+                        <p class="product-description">11" Retina, 128GB, Compatible con Stylus</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(42)</span>
+                        </div>
+                        <p class="price">$749.99</p>
+                        <a href="compras.html" class="btn-buy">Comprar Ahora</a>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="product-card" data-category="accesorios">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Smart Watch">
+                        <span class="product-badge nuevo">Nuevo</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Smart Watch Series 5</h3>
+                        <p class="product-description">Monitoreo de salud, GPS, Resistente al agua</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(38)</span>
+                        </div>
+                        <p class="price">$299.99</p>
+                        <a href="compras.html" class="btn-buy">Comprar Ahora</a>
+                    </div>
+                </div>
+
+                <!-- Producto 6 -->
+                <div class="product-card" data-category="accesorios">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1600086827875-43e28b61cdd0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Cargador Inalámbrico">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cargador Inalámbrico</h3>
+                        <p class="product-description">15W Fast Charging, Compatible universal</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                            <span>(56)</span>
+                        </div>
+                        <p class="price">$49.99</p>
+                        <a href="compras.html" class="btn-buy">Comprar Ahora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- El mismo footer que en index.html -->
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <!-- El mismo chatbot que en index.html -->
+    </div>
+    <button class="chatbot-toggle">
+        <i class="fas fa-comments"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script>
+        // Filtrado de productos
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const productCards = document.querySelectorAll('.product-card');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remover clase active de todos los botones
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Agregar clase active al botón clickeado
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    productCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
